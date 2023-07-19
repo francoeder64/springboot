@@ -8,6 +8,7 @@ public class DemoApplicationController {
     
     @RequestMapping("/hello") 
     public String hello (){
+        System.out.println("we're going to add some logs, just in case");
         return "Hello world. This is an example using spring boot with visual code and also I'm testing git.!!";
     }
 }
