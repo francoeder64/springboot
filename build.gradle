@@ -8,7 +8,7 @@ group = 'sv.com.bancoagricola.pagosqr.example1'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '8'
+	sourceCompatibility = '11'
 }
 
 repositories {
@@ -41,4 +41,12 @@ sourceSets {
         }
     }
 }
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'sv.com.bancoagricola.pagosqr.example1.demo.DemoApplication' // Specify the main class for the JAR
+    }
+}
+
 
